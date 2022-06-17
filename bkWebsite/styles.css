@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, p{
+    color: orange;
+}
+a::before{
+    content: url(img/star-spinningnewnew.gif);
+    width: 20%;
+}
+
+body{
+    background-image: url(img/retro-car-oppositeUPDATE.jpg);
+    background-size: 30%;
+}
+.logo{
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.column{
+    width: 40%;
+    display: inline-block;
+    padding: 0;
+}
+
+.column, .content_item{
+    margin: 2%;
+    vertical-align: top;
+    position: relative;
+    border-style: dashed;
+    border-width: 50%;
+    border-color: orange;
+}
+.inner_column{
+    display: inline-block;
+    width: 45%;
+    overflow: hidden;
+}
+#column_left{
+    width: 30%;
+}
+#content_item_profile{
+    padding: 2% 5%;
+    background-color: black;
+}
+
+#content_item_contact{
+    border-width: 5px;
+    border-style: ridge;
+    background-color: #fff;
+    border-color: #d3d3d3;
+    font-size: 11px;
+    -webkit-font-smoothing: none;
+    font-family: "Pixelated MS Sans Serif",Arial;
+    padding: 0;
+    min-width: 240px;
+}
+#contact_header{
+    background-color: #69c;
+    border-bottom: ridge 5px #d3d3d3;
+    padding: 4px;
+    font-weight: 900;
+}
+   
+#contact_inner{
+    height: 70px;
+    margin-top: 5px;
+    background-color: #fff;
+}
+
+#contact_inner a{
+    display: inline-block;
+    width: 45%;
+    height: 20px;
+    padding: 10px 20px;
+}
+.nav a{
+    color: white;
+    width: 100%;
+    
+}
+.image_of_me{
+    margin-top: 5%;
+    width: 100%;
+}
+.post_wrapper{
+    max-width: 40rem;
+}
+.nyIMG{
+    margin: 0 0 1em;
+    border-style: none;
+    display: flex;
+    justify-content:center ;
+}
+#photo_of_the_month{
+    border: double;
+    /* border-width: 2rem; */
+    border-color: orange;
+    background-color: #000;
+}
+#photo_of_the_month h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#column_right{
+    border: none;
+}
+
+.photos, .photoGrid{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.photoGrid img{
+    width: 140px;
+    height: 250px;
+    object-fit: cover;
+}
+.photoGrid li{
+    margin: 1.4rem;
+}
+.nav{
+    columns: 2;
+}
+@media screen and (max-width: 768px){
+    body{
+        background-size: 60%;
+    }
+    #column_left, #column_right, .column{
+        width: 180%;
+    }
+    .image_of_me{
+        width: 50%;
+    }
+    #contact_inner a{
+        font-size: 1rem;
+    }
+}
